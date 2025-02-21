@@ -10,3 +10,9 @@ fi
 
 # add sources
 cat sources/bookworm-sources.list > /etc/apt/sources.list
+
+# apt update
+apt update -y && apt full-upgrade -y
+
+# install base packages
+xargs apt install -y < packages/base_packages
