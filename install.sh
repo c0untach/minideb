@@ -16,3 +16,9 @@ apt update -y && apt full-upgrade -y
 
 # install base packages
 xargs apt install -y < packages/base_packages
+
+# install custom packages
+xargs apt install -y < packages/custom_packages
+
+# add configs
+cat configs/xfce-applications.menu > /home/user/.config/menus
