@@ -21,4 +21,4 @@ xargs apt install -y < packages/base_packages
 xargs apt install -y < packages/custom_packages
 
 # add configs
-cat configs/xfce-applications.menu > /etc/xdg/menus/xfce-applications.menu
+source scripts/configurate.sh
