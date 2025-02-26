@@ -6,6 +6,7 @@
 mkdir -p /home/user/.local/share/desktop-directories
 mkdir -p /home/user/.config/menus/applications-merged
 mkdir -p /home/user/.local/share/applications
+mkdir -p /home/user/.config/xfce4/xfconf/xfce-perchannel-xml
 
 # populate configs
 cat configs/vbox.directory > /home/user/.local/share/desktop-directories/vbox.directory
