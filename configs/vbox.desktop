@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Virtualbox
+Comment=Virtualbox
+Icon=vbox
+Exec=virtualbox
+Categories=Virtualbox;
+StartupNotify=true
