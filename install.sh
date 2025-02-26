@@ -21,4 +21,4 @@ xargs apt install -y < packages/base_packages
 xargs apt install -y < packages/custom_packages
 
 # add configs
-#source scripts/configurate.sh
+source scripts/configurate.sh
