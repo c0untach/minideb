@@ -2,7 +2,7 @@
 
 # hardening script wrapper for debian and ubuntu based systems
 
-for s in ./scripts/*; do
+for s in *; do
     [[ -f $s ]] || break
 
     source "$s"
