@@ -1,5 +1,5 @@
 function f_adduser {
-  echo "[$SCRIPT_COUNT] $ADDUSER and $USERADD"
+  echo "$ADDUSER and $USERADD"
 
 
   sed -i -e 's/^DIR_MODE=.*/DIR_MODE=0750/' -e 's/^#DIR_MODE=.*/DIR_MODE=0750/' "$ADDUSER"
@@ -13,5 +13,4 @@ function f_adduser {
     chmod 0750 "$userhome"
   done
 
-  ((SCRIPT_COUNT++))
 }
