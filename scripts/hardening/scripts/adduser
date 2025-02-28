@@ -1,7 +1,6 @@
 function f_adduser {
   echo "$ADDUSER and $USERADD"
 
-
   sed -i -e 's/^DIR_MODE=.*/DIR_MODE=0750/' -e 's/^#DIR_MODE=.*/DIR_MODE=0750/' "$ADDUSER"
   sed -i -e 's/^DSHELL=.*/DSHELL=\/bin\/false/' -e 's/^#DSHELL=.*/DSHELL=\/bin\/false/' "$ADDUSER"
   sed -i -e 's/^USERGROUPS=.*/USERGROUPS=yes/' -e 's/^#USERGROUPS=.*/USERGROUPS=yes/' "$ADDUSER"

@@ -1,5 +1,5 @@
 function f_issue {
-  echo "[$SCRIPT_COUNT] /etc/issue"
+  echo "/etc/issue"
 
   local TEXT
 
@@ -14,5 +14,4 @@ function f_issue {
 
   chmod a-x /etc/update-motd.d/*
 
-  ((SCRIPT_COUNT++))
 }
